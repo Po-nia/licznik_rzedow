@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<title>licznik_rzędów</title>
+	</head>
+	<body>
+		<div class="input hidden">
+			<label for="nazwa_input">tytuł projektu</label>
+			<input type="text" class="nazwa_input" />
+			<label for="ilosc_rzedow_input">ilość rzędów</label>
+			<input type="number" class="ilosc_rzedow_input" />
+			<input type="submit" class="zapisz" value="do dzieła!" />
+		</div>
+		<button class="nowy_projekt">NOWY PROJEKT</button>
+		<div class="content">
+			<div class="licznik">
+				<div class="aktualny_rzad"></div>
+				<button class="next">next</button>
+			</div>
+			<div class="info">
+				<span class="opis">projekt</span>
+				<h1 class="nazwa_projektu"></h1>
+				<span class="opis">całkowita ilość rzędów</span>
+				<h2 class="liczba_rzedow"></h2>
+				<span class="opis">pozostało jeszcze tylko</span>
+				<h2 class="pozostale_rzedy"></h2>
+			</div>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>
